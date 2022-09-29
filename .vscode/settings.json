@@ -6,6 +6,9 @@
     "code-runner.ignoreSelection": true,
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "java.server.launchMode" : "Standard",
+    "java.debug.settings.console": "integratedTerminal",
     "files.exclude": {
         ".github": false, 
         ".devcontainer": false,
