@@ -1,8 +1,8 @@
-# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.236.0/containers/java-8/.devcontainer/base.Dockerfile
+# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/java-8/.devcontainer/base.Dockerfile
 
 # [Choice] Debian OS version (use bullseye on local arm64/Apple Silicon): buster, bullseye
 ARG VARIANT="bullseye"
-FROM mcr.microsoft.com/vscode/devcontainers/java:0-8-${VARIANT}
+FROM mcr.microsoft.com/vscode/devcontainers/java:1-8-${VARIANT}
 
 # [Option] Install Maven
 ARG INSTALL_MAVEN="false"
