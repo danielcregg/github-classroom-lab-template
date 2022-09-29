@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.236.0/containers/java-8
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/java-8
 {
 	"name": "Java 8",
 	"build": {
@@ -11,7 +11,7 @@
 			// Options
 			"INSTALL_MAVEN": "false",
 			"INSTALL_GRADLE": "false",
-			"NODE_VERSION": "lts/*"
+			"NODE_VERSION": "none"
 		}
 	},
 
@@ -21,7 +21,6 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
-				"java.home": "/docker-java-home",
 				"java.import.gradle.java.home": "/usr/local/sdkman/candidates/java/current",
 				"java.configuration.runtimes": [{
 					"default": true,
@@ -29,8 +28,10 @@
 					"path": "/usr/local/sdkman/candidates/java/current"
 				}]
 			},
+			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"vscjava.vscode-java-pack",
 				"github.classroom",
 				"formulahendry.code-runner"
 			]
@@ -44,5 +45,12 @@
 	// "postCreateCommand": "java -version",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"features": {
+		"desktop-lite": {
+			"password": "",
+			"webPort": "6080",
+			"vncPort": "5901"
+		}
+	}
 }
