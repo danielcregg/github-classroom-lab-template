@@ -4,7 +4,10 @@
 # Build output
 target/
 build/
-bin/!run_test.sh
+
+# Bin directory (except run_test.sh script)
+bin/
+!bin/run_test.sh
 
 # Package files
 *.jar
