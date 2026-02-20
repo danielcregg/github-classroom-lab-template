@@ -1,1 +1,37 @@
+# Compiled class files
 **/*.class
+
+# Build output
+target/
+build/
+bin/!run_test.sh
+
+# Package files
+*.jar
+!test/lib/*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Log files
+*.log
+
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
